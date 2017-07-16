@@ -20,7 +20,7 @@ namespace LawnMowers.Tests
         public void StartMower__StartPositionAndInstructionsParameters_MowesMowerToLocation(IPosition startPosition, string instructions, string expectedEndPosition)
         {
             // Arrange
-            IMover mower = new Mover(startPosition, instructions);
+            ILawnMower mower = new LawnMower(startPosition, instructions);
 
             // Act
             mower.StartMover();

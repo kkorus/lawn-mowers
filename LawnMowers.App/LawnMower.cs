@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace LawnMowers.App
 {
-    public class Mover : IMover
+    public class LawnMower : ILawnMower
     {
         private readonly Dictionary<char, Action> _instructionActions;
 
@@ -11,7 +11,7 @@ namespace LawnMowers.App
 
         private string _instructions;
 
-        public Mover(IPosition position, string instructions)
+        public LawnMower(IPosition position, string instructions)
         {
             _position = position;
             _instructions = instructions;

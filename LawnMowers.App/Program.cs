@@ -8,13 +8,13 @@ namespace LawnMowers.App
     {
         private static readonly IInputParser InputParser = new InputParser();
 
-        private static readonly IMoversFactory MoversesFactory = new MoversFactory();
+        private static readonly ILawnMowersFactory MoversesFactory = new LawnMowersFactory();
 
         public static void Main(string[] args)
         {
             var inputData = InputParser.ParseInput();
 
-            var movers = MoversesFactory.CreateMovers(inputData).ToList();
+            var movers = MoversesFactory.CreateLawnMowers(inputData).ToList();
             foreach (var mover in movers)
             {
                 mover.StartMover();

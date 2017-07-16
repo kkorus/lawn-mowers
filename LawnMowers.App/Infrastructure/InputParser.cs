@@ -45,7 +45,7 @@ namespace LawnMowers.App.Infrastructure
                 else
                 {
                     ParseInstructionsLine(line, ref moverData);
-                    inputData.MoverData.Add(moverData);
+                    inputData.MowerData.Add(moverData);
                     moverData = new MoverData();
                     isLawnPositionLine = true;
                 }

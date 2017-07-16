@@ -1,6 +1,6 @@
 ﻿namespace LawnMowers.App
 {
-    public interface IMover
+    public interface ILawnMower
     {
         void StartMover();
 

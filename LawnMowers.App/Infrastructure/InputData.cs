@@ -8,11 +8,11 @@ namespace LawnMowers.App.Infrastructure
 
         public int LawnHeight { get; set; }
 
-        public IList<MoverData> MoverData { get; set; }
+        public IList<MoverData> MowerData { get; set; }
 
         public InputData()
         {
-            MoverData = new List<MoverData>();
+            MowerData = new List<MoverData>();
         }
     }
 }
